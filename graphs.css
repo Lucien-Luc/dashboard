@@ -1,0 +1,138 @@
+.dashboard-container {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .sections-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .sections-wrapper.show {
+    max-height: 1500px;
+  }
+  
+  .toggle-btn {
+    background: #4e73df;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #2e59d9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(78, 115, 223, 0.3);
+  }
+  
+  .toggle-btn:active {
+    transform: translateY(0);
+  }
+  
+  .section-container {
+    margin-bottom: 12px;
+  }
+  
+  .section-header {
+    background: #f8f9fc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .section-header:hover {
+    background: #eaecf4;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    margin: 0;
+    font-size: 16px;
+    color: #4e73df;
+  }
+  
+  .section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: white;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .section-content.expanded {
+    max-height: 1500px;
+    padding: 15px;
+    margin-top: 8px;
+    border: 1px solid #e3e6f0;
+  }
+  
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .chart-container {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 280px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chart-title {
+    margin-bottom: 12px;
+    color: #4e73df;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .arrow {
+    border: solid #4e73df;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.up {
+    transform: rotate(-135deg);
+  }
+  
+  .placeholder-text {
+    color: #b7b9cc;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+  }
