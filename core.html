@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/BPN_Logo_invertiert.svg">
+  <title>BPN Programs</title>
+  <!-- Custom CSS -->
+  <link href="dist/css/style.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    
+<![endif]-->
+
+</head>
+
+<body>
+  <!-- ============================================================== -->
+  <!-- Preloader - style you can find in spinners.css -->
+  <!-- ============================================================== -->
+  <div class="preloader">
+    <div class="lds-ripple">
+      <div class="lds-pos"></div>
+      <div class="lds-pos"></div>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- Main wrapper - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar" data-navbarbg="skin6">
+      <nav class="navbar top-navbar navbar-expand-md">
+        <div class="navbar-header" data-logobg="skin6">
+          <!-- This is for the sidebar toggle which is visible on mobile only -->
+          <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+              class="ti-menu ti-close"></i></a>
+          <!-- ============================================================== -->
+          <!-- Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-brand">
+            <!-- Logo icon -->
+            <a href="index.html">
+              <b class="logo-icon">
+                <!-- Dark Logo icon -->
+                <img src="assets/images/logo-bpn.png" alt="homepage" class="dark-logo" />
+                <!-- Light Logo icon -->
+                <img src="assets/images/logo-bpn.png" alt="homepage" class="light-logo" />
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+
+            </a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <!-- ============================================================== -->
+          <!-- Toggle which is visible on mobile only -->
+          <!-- ============================================================== -->
+          <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <!-- ============================================================== -->
+          <!-- toggle and nav items -->
+          <!-- ============================================================== -->
+          <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+
+            <!-- ============================================================== -->
+
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="javascript:void(0)">
+                <div class="customize-input">
+                  <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                    <option selected>EN</option>
+                    <option value="1">GE</option>
+                  </select>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- ============================================================== -->
+          <!-- Right side toggle and nav items -->
+          <!-- ============================================================== -->
+          <ul class="navbar-nav float-right">
+            <!-- ============================================================== -->
+            <!-- Search -->
+            <!-- ============================================================== -->
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="javascript:void(0)">
+                <form>
+                  <div class="customize-input">
+                    <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search"
+                      placeholder="Search" aria-label="Search">
+                    <i class="form-control-icon" data-feather="search"></i>
+                  </div>
+                </form>
+              </a>
+            </li>
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="assets/images/free-user-icon-3297-thumb.png" alt="user" class="rounded-circle" width="40">
+                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Admin</span> <i
+                    data-feather="chevron-down" class="svg-icon"></i></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                    class="svg-icon mr-2 ml-1"></i>
+                  My Profile</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Inbox</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Account Setting</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Logout</a>
+                <div class="dropdown-divider"></div>
+                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                    Profile</a></div>
+              </div>
+            </li> -->
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+      <!-- Sidebar scroll-->
+      <div class="scroll-sidebar" data-sidebarbg="skin6">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html" aria-expanded="false"><i
+                  data-feather="home" class="feather-icon"></i><span class="hide-menu"><font color="#222"><strong>Dashboard</strong></font></span></a></li>
+            <li class="list-divider"></li>
+
+            <li class="list-divider"></li>
+            <li class="nav-small-cap"><span class="hide-menu">Programs</span></li>
+            <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                aria-expanded="false"><i data-feather="refresh-cw" class="feather-icon" style="color: blue; text-shadow: 0 0 10px rgba(0, 0, 255, 0.8);"></i><span
+                  class="hide-menu"><font color="#222"><strong>Ongoing Programs</strong></font></span></a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"><font color="#222"><strong>MCF</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="aguka.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>AGUKA</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="I-acc.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>I-ACC</strong></font>
+
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="core.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>CORE</strong></font>
+
+                </span></a>
+            </li>
+              </ul>
+            </li>
+            <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                aria-expanded="false"><i data-feather="check-circle" class="feather-icon" style="color: green; text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);"></i><span class="hide-menu"><font color="#222"><strong>Completed Programs</strong></font></span></a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>MCF</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="aguka.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>AGUKA</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="I-acc.html" class="sidebar-link"><span class="hide-menu">
+                  <font color="#222"><strong>I-ACC</strong></font>
+                    </span></a>
+                </li>
+            </li>
+
+          </ul>
+          </li>
+          <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><i data-feather="file-text" class="feather-icon" style="stroke: black; stroke-width: 2; fill: white; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));"></i><span class="hide-menu"><font color="#222"><strong>Forms</strong></font> </span></a>
+            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+              <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>MCF</strong></font>
+                  </span></a>
+              </li>
+              <li class="sidebar-item"><a href="aguka.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>AGUKA</strong></font>
+                  </span></a>
+              </li>
+              <li class="sidebar-item"><a href="I-acc.html" class="sidebar-link"><span class="hide-menu">
+                <font color="#222"><strong>I-ACC</strong></font>
+                  </span></a>
+              </li>
+              <li class="sidebar-item"><a href="core.html" class="sidebar-link"><span class="hide-menu"> <font color="#222"><strong>CORE</strong></font>
+
+              </span></a>
+          </li>
+            </ul>
+          </li>
+
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+      <!-- ============================================================== -->
+      <!-- CONTAINER ONE (PROGRESS GRAPHS) -->
+      <style>
+        .progress-container {
+          margin: 24px 24px 24px 20px;
+          padding: 25px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .title {
+          font-size: 1.5rem;
+          color: #2c3e50;
+          font-weight: 500;
+        }
+
+        .dropdown-btn {
+          padding: 8px 15px;
+          background: #4e73df;
+          color: rgb(255, 255, 255);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .dropdown-btn:hover {
+          background: #2e59d9;
+        }
+
+        .graphs-container {
+          display: none;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          gap: 20px;
+          padding: 20px 0;
+        }
+
+        .graph-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 15px;
+          border-radius: 10px;
+          background: #f8f9fc;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .graph-item:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-circle {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: conic-gradient(#ff5100 var(--progress), #e0e0e0 0deg);
+          position: relative;
+        }
+
+        .progress-circle::before {
+          content: '';
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          background: white;
+          border-radius: 50%;
+          top: 10px;
+          left: 10px;
+        }
+
+        .percentage {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1rem;
+          font-weight: 500;
+          color: #2c3e50;
+        }
+
+        .popup-card {
+          position: absolute;
+          top: -80px;
+          left: 50%;
+          transform: translateX(-50%) scale(0);
+          background: white;
+          padding: 10px 15px;
+          border-radius: 8px;
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+          z-index: 100;
+          transition: transform 0.3s;
+          pointer-events: none;
+        }
+
+        .graph-item:hover .popup-card {
+          transform: translateX(-50%) scale(1);
+        }
+
+        .show {
+          display: grid !important;
+        }
+      </style>
+      </head>
+      <div class="progress-container">
+        <div class="header">
+          <h2 style="margin: 0; color: #5a5c69;" class="title"><strong>CORE Program Progress Overview</strong></h2>
+          <button class="dropdown-btn" onclick="toggleGraphs()">
+            <i class="fa fa-chevron-down"></i>
+          </button>
+
+        </div>
+        <div class="graphs-container" id="graphsContainer">
+          <!-- Graphs will be dynamically added here -->
+        </div>
+      </div>
+
+      <script>
+        function toggleGraphs() {
+          const container = document.getElementById('graphsContainer');
+          container.classList.toggle('show');
+          const btn = document.querySelector('.dropdown-btn');
+          const icon = btn.querySelector('i');  // Select the icon inside the button
+          const text = btn.querySelector('span'); // Select the text inside the button
+
+          // Update the button text and icon based on the state
+          if (container.classList.contains('show')) {
+            text.textContent = 'Hide Graphs';
+            icon.className = 'fa fa-chevron-up'; // Change to "up" arrow icon
+          } else {
+            text.textContent = 'Show Graphs';
+            icon.className = 'fa fa-chevron-down'; // Change to "down" arrow icon
+          }
+        }
+
+        // Generate graph items
+        const graphsContainer = document.getElementById('graphsContainer');
+        const projectNames = [
+          'No data', 'No data', 'No data', 'No data',
+          'No data', 'No data', 'No data', 'No data',
+          'No data', 'No data', 'No data', 'No data',
+          'No data', 'No data', 'No data', 'No data',
+          'No data', 'No data', 'No data', 'No data',
+          'No data', 'No data', 'No data'
+        ];
+
+        projectNames.forEach((name, index) => {
+          const progress = Math.floor(Math.random() * 100);
+          const graphItem = document.createElement('div');
+          graphItem.className = 'graph-item';
+          graphItem.innerHTML = `
+                    <div class="progress-circle" style="--progress: ${progress}%">
+                      <span class="percentage">${progress}%</span>
+                    </div>
+                    <div class="popup-card">
+                      <strong>${name}</strong>
+                      <p>Progress: ${progress}%</p>
+                    </div>
+                  `;
+          graphsContainer.appendChild(graphItem);
+        });
+      </script>
+
+
+      <!-- ============================================================== -->
+      <!-- CONTAINER TWO (INPUTS)-->
+
+      <style>
+        .embedded-container {
+          margin: 24px 24px 24px 20px;
+          padding: 25px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .title {
+          font-size: 1.5rem;
+          color: #2c3e50;
+          font-weight: 500;
+        }
+
+        .iframe-container {
+          position: relative;
+          transition: all 0.3s ease;
+          display: none;
+        }
+
+        .iframe-container.show {
+          display: block;
+          animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .iframe-container.expanded {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90vw;
+          height: 90vh;
+          z-index: 1000;
+          background: white;
+          padding: 20px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        }
+
+        .iframe-wrapper {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .iframe-container.expanded .iframe-wrapper {
+          padding-bottom: 90%;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+        }
+
+        .action-btn {
+          padding: 8px 15px;
+          background: #4e73df;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .action-btn:hover {
+          background: #2e59d9;
+        }
+
+        .expand-btn {
+          display: none;
+          margin-left: 10px;
+        }
+
+        .overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+        }
+
+        .overlay.active {
+          display: block;
+        }
+
+        .close-btn {
+          display: none;
+          position: absolute;
+          top: -40px;
+          right: 0;
+          padding: 8px 15px;
+          background: #dc3545;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .close-btn:hover {
+          background: #c82333;
+        }
+
+        .iframe-container.expanded .close-btn {
+          display: block;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+      </head>
+
+      <body>
+        <div class="embedded-container">
+          <div class="header">
+            <h2 style="margin: 0; color: #5a5c69;" class="title">CORE Input</h2>
+            <div>
+
+
+              <button class="action-btn show-btn" id="showBtn" onclick="toggleIframe()">
+                <i class="fa fa-chevron-down"></i>
+              </button>
+
+
+              <button class="action-btn expand-btn" id="expandBtn" onclick="toggleExpand()">Expand</button>
+
+            </div>
+
+
+
+
+          </div>
+          <div class="iframe-container" id="iframeContainer">
+            <button class="close-btn" onclick="toggleExpand()">Close</button>
+            <div class="iframe-wrapper">
+                <iframe
+                    src="https://docs.google.com/spreadsheets/d/1wy1jKvDj-ve0X79-npI3ZNZbdh8thSlcTk6avzG8a7w/edit?gid=611246693usp=sharing"
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        
+        <style>
+        .iframe-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+        }
+        
+        .iframe-wrapper iframe {
+            width: 100%;
+            /* Increase height to account for toolbar */
+            height: calc(100% + 135px);
+            /* Move content up to hide toolbar */
+            margin-top: -100px;
+            border: none;
+        }
+        
+        /* Hide Google Sheets UI elements */
+        .waffle-embedded-footer,
+        [class*="docs-sheet-container"] > div:last-child {
+            display: none !important;
+        }
+        
+        /* Additional selectors to hide toolbar elements */
+        .docs-sheet-container > div:first-child,
+        #docs-toolbar-wrapper,
+        .docs-sheet-header,
+        #docs-chrome {
+            display: none !important;
+        }
+        
+        /* Preserve your existing close button styling */
+        .close-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 1000;
+        }
+        
+        /* Your existing overlay styles remain unchanged */
+        </style>
+        
+        <div class="overlay" id="overlay"></div>        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <script>
+          function toggleIframe() {
+            const container = document.getElementById('iframeContainer');
+            const showBtn = document.getElementById('showBtn');
+            const expandBtn = document.getElementById('expandBtn');
+
+            container.classList.toggle('show');
+            showBtn.innerHTML = container.classList.contains('show') 
+    ? 'Close'  // Keep "Close" as text
+    : '<i class="fa fa-chevron-down"></i>';  // Replace "Open" with an icon
+
+            expandBtn.style.display = container.classList.contains('show') ? 'inline-block' : 'none';
+          }
+
+          function toggleExpand() {
+            const container = document.getElementById('iframeContainer');
+            const overlay = document.getElementById('overlay');
+            const expandBtn = document.getElementById('expandBtn');
+            const showBtn = document.getElementById('showBtn');
+
+            container.classList.toggle('expanded');
+            overlay.classList.toggle('active');
+
+            if (container.classList.contains('expanded')) {
+              expandBtn.style.display = 'none';
+              showBtn.style.display = 'none';
+              document.body.style.overflow = 'hidden';
+            } else {
+              expandBtn.style.display = 'inline-block';
+              showBtn.style.display = 'inline-block';
+              document.body.style.overflow = 'auto';
+            }
+          }
+
+          // Close expanded view when clicking overlay
+          document.getElementById('overlay').addEventListener('click', function () {
+            if (document.getElementById('iframeContainer').classList.contains('expanded')) {
+              toggleExpand();
+            }
+          });
+
+          // Close expanded view when pressing ESC key
+          document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && document.getElementById('iframeContainer').classList.contains('expanded')) {
+              toggleExpand();
+            }
+          });
+        </script>
+
+
+        <!-- ============================================================== -->
+        <!-- CONTAINER THREE (INDICATOR VISUALISATION)-->
+        <style>
+          .dashboard-container {
+            margin: 24px 24px 24px 20px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+
+          .sections-wrapper {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+          }
+
+          .sections-wrapper.show {
+            max-height: 2000px;
+          }
+
+          .toggle-btn {
+            background: #4e73df;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+          }
+
+          .toggle-btn:hover {
+            background: #2e59d9;
+          }
+
+          .section-container {
+            margin-bottom: 15px;
+          }
+
+          .section-header {
+            background: #f8f9fc;
+            padding: 15px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+          }
+
+          .section-header:hover {
+            background: #eaecf4;
+          }
+
+          .section-title {
+            margin: 0;
+            font-size: 18px;
+            color: #4e73df;
+          }
+
+          .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: white;
+            border-radius: 0 0 8px 8px;
+          }
+
+          .section-content.expanded {
+            max-height: max-content;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #e3e6f0;
+          }
+
+          .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+          }
+
+          .metric-card {
+            background: #f8f9fc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+          }
+
+          .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4e73df;
+            margin: 10px 0 5px;
+          }
+
+          .metric-label {
+            color: #858796;
+            font-size: 14px;
+          }
+
+          .arrow {
+            border: solid #4e73df;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+          }
+
+          .arrow.up {
+            transform: rotate(-135deg);
+          }
+        </style>
+
+        <div class="dashboard-container">
+          <div class="main-header">
+            <h2 style="margin: 0; color: #5a5c69;"><strong>Indicator Visualisation</strong></h2>
+
+            <button class="toggle-btn" onclick="toggleMainSection()">
+              <i class="fa fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <div class="sections-wrapper">
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>OutPut Level</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+                <div class="chart-grid">
+                  <!-- 1. Youths who participated in trainings -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Youths who participated in trainings</h4>
+                    <canvas id="youthParticipationChart"></canvas>
+                  </div>
+
+                  <!-- 2. Non-youths who participated in trainings -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Non-youths who participated in trainings</h4>
+                    <canvas id="nonYouthParticipationChart"></canvas>
+                  </div>
+
+                  <!-- 3. Youths who completed trainings -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Youths who completed trainings</h4>
+                    <canvas id="youthCompletionChart"></canvas>
+                  </div>
+
+                  <!-- 4. Non-youths who completed trainings -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Non-youths who completed trainings</h4>
+                    <canvas id="nonYouthCompletionChart"></canvas>
+                  </div>
+
+                  <!-- 5. Quality, usefulness and relevance of trainings -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Quality, usefulness and relevance of trainings</h4>
+                    <canvas id="trainingQualityChart"></canvas>
+                  </div>
+
+                  <!-- 6. Enterprises accessing BDS -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Enterprises accessing BDS</h4>
+                    <canvas id="bdsAccessChart"></canvas>
+                  </div>
+
+                  <!-- 7. Non-financial/services offered -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Non-financial/services offered</h4>
+                    <canvas id="nonFinancialServicesChart"></canvas>
+                  </div>
+
+                  <!-- 8. Enterprises accessing financial products/services -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Enterprises accessing financial products/services</h4>
+                    <canvas id="financialAccessChart"></canvas>
+                  </div>
+
+                  <!-- 9. Financial products and services offered -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Financial products and services offered</h4>
+                    <canvas id="financialProductsChart"></canvas>
+                  </div>
+
+                  <!-- 10. Value of financial products received -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Value of financial products received</h4>
+                    <canvas id="financialValueChart"></canvas>
+                  </div>
+
+                  <!-- 11. Quality metrics of support -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Quality metrics of support services</h4>
+                    <canvas id="supportQualityChart"></canvas>
+                  </div>
+                </div>
+
+                <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                    // Common configuration
+                    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+
+                    const commonOptions = {
+                      responsive: true,
+                      maintainAspectRatio: false,
+                      plugins: {
+                        legend: {
+                          position: 'bottom',
+                          labels: {
+                            boxWidth: 12,
+                            padding: 15,
+                            font: { size: 11 }
+                          }
+                        }
+                      },
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                          ticks: { font: { size: 10 } }
+                        },
+                        x: {
+                          ticks: { font: { size: 10 } }
+                        }
+                      }
+                    };
+
+                    // Sample data (replace with actual data)
+                    const data = {
+                      youthParticipation: [75, 82, 88, 95, 91, 89],
+                      nonYouthParticipation: [65, 70, 75, 78, 82, 80],
+                      youthCompletion: [70, 75, 82, 88, 85, 84],
+                      nonYouthCompletion: [60, 65, 70, 73, 75, 74],
+                      trainingQuality: {
+                        quality: [85, 87, 88, 90, 92, 91],
+                        usefulness: [82, 84, 86, 88, 90, 89],
+                        relevance: [83, 85, 87, 89, 91, 90]
+                      },
+                      bdsAccess: [45, 50, 55, 60, 65, 68],
+                      nonFinancialServices: {
+                        training: [40, 45, 50, 55, 58, 60],
+                        consulting: [35, 40, 45, 50, 53, 55],
+                        mentoring: [30, 35, 40, 45, 48, 50]
+                      },
+                      financialAccess: [35, 40, 45, 50, 55, 58],
+                      financialProducts: {
+                        loans: [30, 35, 40, 45, 48, 50],
+                        grants: [25, 30, 35, 40, 43, 45],
+                        investments: [20, 25, 30, 35, 38, 40]
+                      },
+                      financialValue: [250000, 300000, 350000, 400000, 450000, 500000],
+                      supportQuality: {
+                        quality: [88, 85, 90, 82, 87, 89],
+                        usefulness: [86, 83, 88, 80, 85, 87],
+                        relevance: [87, 84, 89, 81, 86, 88],
+                        affordability: [85, 82, 87, 79, 84, 86],
+                        accessibility: [84, 81, 86, 78, 83, 85]
+                      }
+                    };
+
+                    // 1. Youth Participation Chart
+                    new Chart(document.getElementById('youthParticipationChart'), {
+                      type: 'line',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Youth Participation Rate',
+                          data: data.youthParticipation,
+                          borderColor: '#4e73df',
+                          backgroundColor: '#4e73df20',
+                          tension: 0.1,
+                          fill: true
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 2. Non-Youth Participation Chart
+                    new Chart(document.getElementById('nonYouthParticipationChart'), {
+                      type: 'line',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Non-Youth Participation Rate',
+                          data: data.nonYouthParticipation,
+                          borderColor: '#1cc88a',
+                          backgroundColor: '#1cc88a20',
+                          tension: 0.1,
+                          fill: true
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 3. Youth Completion Chart
+                    new Chart(document.getElementById('youthCompletionChart'), {
+                      type: 'bar',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Youth Completion Rate',
+                          data: data.youthCompletion,
+                          backgroundColor: '#4e73df'
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 4. Non-Youth Completion Chart
+                    new Chart(document.getElementById('nonYouthCompletionChart'), {
+                      type: 'bar',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Non-Youth Completion Rate',
+                          data: data.nonYouthCompletion,
+                          backgroundColor: '#1cc88a'
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 5. Training Quality Chart
+                    new Chart(document.getElementById('trainingQualityChart'), {
+                      type: 'radar',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Quality',
+                          data: data.trainingQuality.quality,
+                          borderColor: '#4e73df',
+                          backgroundColor: '#4e73df20'
+                        }, {
+                          label: 'Usefulness',
+                          data: data.trainingQuality.usefulness,
+                          borderColor: '#1cc88a',
+                          backgroundColor: '#1cc88a20'
+                        }, {
+                          label: 'Relevance',
+                          data: data.trainingQuality.relevance,
+                          borderColor: '#36b9cc',
+                          backgroundColor: '#36b9cc20'
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 6. BDS Access Chart
+                    new Chart(document.getElementById('bdsAccessChart'), {
+                      type: 'line',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'BDS Access Rate',
+                          data: data.bdsAccess,
+                          borderColor: '#4e73df',
+                          backgroundColor: '#4e73df20',
+                          tension: 0.1,
+                          fill: true
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 7. Non-Financial Services Chart
+                    new Chart(document.getElementById('nonFinancialServicesChart'), {
+                      type: 'bar',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Training',
+                          data: data.nonFinancialServices.training,
+                          backgroundColor: '#4e73df'
+                        }, {
+                          label: 'Consulting',
+                          data: data.nonFinancialServices.consulting,
+                          backgroundColor: '#1cc88a'
+                        }, {
+                          label: 'Mentoring',
+                          data: data.nonFinancialServices.mentoring,
+                          backgroundColor: '#36b9cc'
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 8. Financial Access Chart
+                    new Chart(document.getElementById('financialAccessChart'), {
+                      type: 'line',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Financial Access Rate',
+                          data: data.financialAccess,
+                          borderColor: '#4e73df',
+                          backgroundColor: '#4e73df20',
+                          tension: 0.1,
+                          fill: true
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 9. Financial Products Chart
+                    new Chart(document.getElementById('financialProductsChart'), {
+                      type: 'bar',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Loans',
+                          data: data.financialProducts.loans,
+                          backgroundColor: '#4e73df'
+                        }, {
+                          label: 'Grants',
+                          data: data.financialProducts.grants,
+                          backgroundColor: '#1cc88a'
+                        }, {
+                          label: 'Investments',
+                          data: data.financialProducts.investments,
+                          backgroundColor: '#36b9cc'
+                        }]
+                      },
+                      options: commonOptions
+                    });
+
+                    // 10. Financial Value Chart
+                    new Chart(document.getElementById('financialValueChart'), {
+                      type: 'line',
+                      data: {
+                        labels: months,
+                        datasets: [{
+                          label: 'Financial Value',
+                          data: data.financialValue,
+                          borderColor: '#4e73df',
+                          backgroundColor: '#4e73df20',
+                          tension: 0.1,
+                          fill: true
+                        }]
+                      },
+                      options: {
+                        ...commonOptions,
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            ticks: {
+                              callback: function (value) {
+                                return '$' + value.toLocaleString();
+                              }
+                            }
+                          }
+                        }
+                      }
+                    });
+
+                    // 11. Support Quality Chart
+                    new Chart(document.getElementById('supportQualityChart'), {
+                      type: 'radar',
+                      data: {
+                        labels: ['Quality', 'Usefulness', 'Relevance', 'Affordability', 'Accessibility'],
+                        datasets: [{
+                          label: 'Current Month',
+                          data: [
+                            data.supportQuality.quality[5],
+                            data.supportQuality.usefulness[5],
+                            data.supportQuality.relevance[5],
+                            data.supportQuality.affordability[5],
+                            data.supportQuality.accessibility[5]
+                          ],
+                          backgroundColor: '#4e73df40',
+                          borderColor: '#4e73df'
+                        }]
+                      },
+                      options: {
+                        ...commonOptions,
+                        scales: {
+                          r: {
+                            beginAtZero: true,
+                            max: 100
+                          }
+                        }
+                      }
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>Intermediate Outcome</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+                <style>
+                  .chart-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                    width: 100%;
+                  }
+
+                  .chart-container {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    height: 350px;
+                    width: 100%;
+                    position: relative;
+                  }
+
+                  .chart-title {
+                    margin-bottom: 15px;
+                    color: #4e73df;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                  }
+                </style>
+
+                <div class="chart-grid">
+                  <!-- Chart 1: Youths who demonstrate improved learning outcome or skill acquisitions -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Youths who demonstrate improved learning outcome or skill acquisitions</h4>
+                    <canvas id="youthLearningChart"></canvas>
+                  </div>
+
+                  <!-- Chart 2: Non-youths who demonstrate improved learning outcome or skill acquisitions -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Non-youths who demonstrate improved learning outcome or skill acquisitions
+                    </h4>
+                    <canvas id="nonYouthLearningChart"></canvas>
+                  </div>
+
+                  <!-- Chart 3: Enterprise capacity development -->
+                  <div class="chart-container">
+                    <h4 class="chart-title">Enterprise capacity development</h4>
+                    <canvas id="enterpriseCapacityChart"></canvas>
+                  </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+                  const randomData = () => Array.from({ length: 6 }, () => Math.floor(Math.random() * 40) + 40);
+
+                  const commonOptions = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: {
+                        position: 'bottom',
+                        labels: {
+                          boxWidth: 12,
+                          padding: 15,
+                          font: { size: 11 }
+                        }
+                      }
+                    },
+                    scales: {
+                      y: { beginAtZero: true, ticks: { font: { size: 10 } } },
+                      x: { ticks: { font: { size: 10 } } }
+                    }
+                  };
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    function createChart(id, type, label, color, data) {
+                      const ctx = document.getElementById(id);
+                      return new Chart(ctx, {
+                        type: type,
+                        data: { labels: months, datasets: [{ label: label, data: data, borderColor: color, backgroundColor: color, tension: 0.1 }] },
+                        options: commonOptions
+                      });
+                    }
+
+                    createChart('youthLearningChart', 'line', 'Youth Learning (%)', '#4e73df', randomData());
+                    createChart('nonYouthLearningChart', 'bar', 'Non-Youth Learning (%)', '#1cc88a', randomData());
+                    createChart('enterpriseCapacityChart', 'line', 'Enterprise Capacity (%)', '#36b9cc', randomData());
+                  });
+                </script>
+
+              </div>
+            </div>
+          <!-- OUTCOME LEVEL GRAPHS -->
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>Outcome Level</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+
+                <style>
+                  .charts-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 20px;
+                  }
+                
+                  .chart-box {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    transition: transform 0.3s;
+                  }
+                
+                  .chart-box:hover {
+                    transform: translateY(-10px);
+                  }
+                
+                  .chart-title {
+                    font-size: 14px;
+                    color: #5a5c69;
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                  }
+                
+                  .bar-container {
+                    height: 200px;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 15px;
+                    padding: 20px 0;
+                    border-bottom: 2px solid #e3e6f0;
+                  }
+                
+                  .bar {
+                    flex: 1;
+                    background: #4e73df;
+                    transition: height 0.6s ease-out, background 0.3s;
+                    position: relative;
+                    border-radius: 4px 4px 0 0;
+                    cursor: pointer;
+                  }
+                
+                  .bar:hover {
+                    background: #2e59d9;
+                  }
+                
+                  .bar::after {
+                    content: attr(data-value);
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 12px;
+                  }
+                
+                  .legend {
+                    display: flex;
+                    gap: 15px;
+                    margin-top: 15px;
+                    font-size: 12px;
+                  }
+                
+                  .legend-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                  }
+                
+                  .legend-color {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 2px;
+                  }
+                
+                  .pie-chart {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background: conic-gradient(#4e73df 0% 70%, #e3e6f0 70% 100%);
+                    margin: 20px auto;
+                    animation: pieRotate 1.5s ease-in-out;
+                  }
+                
+                  .line-chart {
+                    height: 200px;
+                    position: relative;
+                    padding: 20px 0;
+                    border-bottom: 2px solid #e3e6f0;
+                  }
+                
+                  .line {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    stroke-dasharray: 4;
+                    stroke-dashoffset: 4;
+                    animation: lineDraw 2s ease forwards;
+                  }
+                
+                  .dot {
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    background: #4e73df;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    animation: dotBounce 1s ease-in-out infinite alternate;
+                  }
+                
+                  @keyframes lineDraw {
+                    0% {
+                      stroke-dashoffset: 4;
+                    }
+                    100% {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+                
+                  @keyframes dotBounce {
+                    0% {
+                      transform: translate(-50%, -50%) scale(1);
+                    }
+                    100% {
+                      transform: translate(-50%, -50%) scale(1.3);
+                    }
+                  }
+                
+                  .chart-box:hover .pie-chart {
+                    animation: pieRotate 2s ease-in-out infinite;
+                  }
+                </style>
+                
+                <div class="charts-grid">
+                  <!-- Employed Youth Chart -->
+                  <div class="chart-box">
+                    <div class="chart-title">Employed Youth (Wage Employment)</div>
+                    <div class="pie-chart"></div>
+                    <div class="legend">
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #4e73df"></div>
+                        <span>Employed (70%)</span>
+                      </div>
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #e3e6f0"></div>
+                        <span>Unemployed (30%)</span>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Self Employed Youth Chart -->
+                  <div class="chart-box">
+                    <div class="chart-title">Self Employed Youths</div>
+                    <div class="bar-container">
+                      <div class="bar" style="height: 40%" data-value="40%"></div>
+                      <div class="bar" style="height: 60%" data-value="60%"></div>
+                      <div class="bar" style="height: 75%" data-value="75%"></div>
+                      <div class="bar" style="height: 85%" data-value="85%"></div>
+                    </div>
+                    <div class="legend">
+                      <span>Quarterly Progress</span>
+                    </div>
+                  </div>
+                
+                  <!-- Youth in Dignified Work -->
+                  <div class="chart-box">
+                    <div class="chart-title">Youths in Dignified and Fulfilling Work</div>
+                    <div class="line-chart">
+                      <svg class="line" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polyline
+                          points="0,70 33,55 66,40 100,20"
+                          fill="none"
+                          stroke="#4e73df"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <div class="dot" style="left: 0%; top: 70%"></div>
+                      <div class="dot" style="left: 33%; top: 55%"></div>
+                      <div class="dot" style="left: 66%; top: 40%"></div>
+                      <div class="dot" style="left: 100%; top: 20%"></div>
+                    </div>
+                  </div>
+                
+                  <!-- Non-Youth in Dignified Work -->
+                  <div class="chart-box">
+                    <div class="chart-title">Non-Youth in Dignified and Fulfilling Work</div>
+                    <div class="pie-chart" style="background: conic-gradient(#4e73df 0% 65%, #e3e6f0 65% 100%)"></div>
+                    <div class="legend">
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #4e73df"></div>
+                        <span>Dignified Work (65%)</span>
+                      </div>
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #e3e6f0"></div>
+                        <span>Other (35%)</span>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Enterprises Revenue -->
+                  <div class="chart-box">
+                    <div class="chart-title">Enterprises Reporting Revenue Increase</div>
+                    <div class="bar-container">
+                      <div class="bar" style="height: 20%" data-value="20%"></div>
+                      <div class="bar" style="height: 45%" data-value="45%"></div>
+                      <div class="bar" style="height: 65%" data-value="65%"></div>
+                      <div class="bar" style="height: 85%" data-value="85%"></div>
+                    </div>
+                    <div class="legend">
+                      <span>Quarterly Progress</span>
+                    </div>
+                  </div>
+                
+                  <!-- Market Change -->
+                  <div class="chart-box">
+                    <div class="chart-title">Enterprises Reporting Market Changes</div>
+                    <div class="pie-chart" style="background: conic-gradient(#4e73df 0% 70%, #e3e6f0 70% 100%)"></div>
+                    <div class="legend">
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #4e73df"></div>
+                        <span>Changed (70%)</span>
+                      </div>
+                      <div class="legend-item">
+                        <div class="legend-color" style="background: #e3e6f0"></div>
+                        <span>Unchanged (30%)</span>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Non-Youth Employment -->
+                  <div class="chart-box">
+                    <div class="chart-title">Non-Youth Employed or Self Employed</div>
+                    <div class="line-chart">
+                      <svg class="line" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polyline
+                          points="0,60 33,45 66,30 100,15"
+                          fill="none"
+                          stroke="#4e73df"
+                          stroke-width="2"
+                        />
+                      </svg>
+                      <div class="dot" style="left: 0%; top: 60%"></div>
+                      <div class="dot" style="left: 33%; top: 45%"></div>
+                      <div class="dot" style="left: 66%; top: 30%"></div>
+                      <div class="dot" style="left: 100%; top: 15%"></div>
+                    </div>
+                  </div>
+                
+                  <!-- Operational Enterprises -->
+                  <div class="chart-box">
+                    <div class="chart-title">Operational Enterprises After 6 and 24 Months</div>
+                    <div class="bar-container">
+                      <div class="bar" style="height: 90%" data-value="90%"></div>
+                      <div class="bar" style="height: 75%" data-value="75%"></div>
+                    </div>
+                    <div class="legend">
+                      <div class="legend-item">
+                        <span>6 Months vs 24 Months</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function toggleMainSection() {
+            const wrapper = document.querySelector('.sections-wrapper');
+            const btn = document.querySelector('.toggle-btn');
+            const btnArrow = btn.querySelector('.arrow');
+            const btnText = btn.querySelector('span:first-child');
+
+            wrapper.classList.toggle('show');
+            btnArrow.classList.toggle('up');
+            btnText.textContent = wrapper.classList.contains('show') ? 'Hide Analytics' : 'Show Analytics';
+          }
+
+          function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.arrow');
+
+            // Toggle the expanded class
+            content.classList.toggle('expanded');
+            arrow.classList.toggle('up');
+
+            // Remove expanded class from other sections
+            const allSections = document.querySelectorAll('.section-content');
+            const allArrows = document.querySelectorAll('.section-header .arrow');
+
+            allSections.forEach((section) => {
+              if (section !== content) {
+                section.classList.remove('expanded');
+              }
+            });
+
+            allArrows.forEach((arr) => {
+              if (arr !== arrow) {
+                arr.classList.remove('up');
+              }
+            });
+          }
+        </script>
+
+
+
+
+
+        <!-- End Right sidebar -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer text-center">
+      Straight from <a href="https://bpn.com">BPN M&E Office</a>.
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page wrapper  -->
+  <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Wrapper -->
+  <!-- ============================================================== -->
+  <!-- End Wrapper -->
+  <div class="chat-windows "></div>
+  <!-- ============================================================== -->
+  <!-- All Jquery -->
+  <!-- ============================================================== -->
+  <script src="assets/libs/jquery/dist/jquery.min.js "></script>
+  <!-- Bootstrap tether Core JavaScript -->
+  <script src="assets/libs/popper.js/dist/umd/popper.min.js "></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js "></script>
+  <!-- apps -->
+  <script src="dist/js/app.min.js "></script>
+  <script src="dist/js/app.init-menusidebar.js"></script>
+  <script src="dist/js/app-style-switcher.js "></script>
+  <script src="dist/js/feather.min.js"></script>
+  <!-- slimscrollbar scrollbar JavaScript -->
+  <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js "></script>
+  <script src="assets/extra-libs/sparkline/sparkline.js "></script>
+  <!-- theme js -->
+  <!--Menu sidebar -->
+  <script src="dist/js/sidebarmenu.js "></script>
+  <!--Custom JavaScript -->
+  <script src="dist/js/custom.min.js "></script>
+</body>
+
+</html>

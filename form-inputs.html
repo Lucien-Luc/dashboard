@@ -1,0 +1,3001 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/BPN_Logo_invertiert.svg">
+  <title>BPN Programs</title>
+  <!-- Custom CSS -->
+  <link href="dist/css/style.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    
+<![endif]-->
+
+</head>
+
+<body>
+  <!-- ============================================================== -->
+  <!-- Preloader - style you can find in spinners.css -->
+  <!-- ============================================================== -->
+  <div class="preloader">
+    <div class="lds-ripple">
+      <div class="lds-pos"></div>
+      <div class="lds-pos"></div>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- Main wrapper - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <header class="topbar" data-navbarbg="skin6">
+      <nav class="navbar top-navbar navbar-expand-md">
+        <div class="navbar-header" data-logobg="skin6">
+          <!-- This is for the sidebar toggle which is visible on mobile only -->
+          <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+              class="ti-menu ti-close"></i></a>
+          <!-- ============================================================== -->
+          <!-- Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-brand">
+            <!-- Logo icon -->
+            <a href="index.html">
+              <b class="logo-icon">
+                <!-- Dark Logo icon -->
+                <img src="assets/images/logo-bpn.png" alt="homepage" class="dark-logo" />
+                <!-- Light Logo icon -->
+                <img src="assets/images/logo-bpn.png" alt="homepage" class="light-logo" />
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+
+            </a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <!-- ============================================================== -->
+          <!-- Toggle which is visible on mobile only -->
+          <!-- ============================================================== -->
+          <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <!-- ============================================================== -->
+          <!-- toggle and nav items -->
+          <!-- ============================================================== -->
+          <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+
+            <!-- ============================================================== -->
+
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="javascript:void(0)">
+                <div class="customize-input">
+                  <select class="custom-select form-control bg-white custom-radius custom-shadow border-0">
+                    <option selected>EN</option>
+                    <option value="1">GE</option>
+                  </select>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- ============================================================== -->
+          <!-- Right side toggle and nav items -->
+          <!-- ============================================================== -->
+          <ul class="navbar-nav float-right">
+            <!-- ============================================================== -->
+            <!-- Search -->
+            <!-- ============================================================== -->
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="javascript:void(0)">
+                <form>
+                  <div class="customize-input">
+                    <input class="form-control custom-shadow custom-radius border-0 bg-white" type="search"
+                      placeholder="Search" aria-label="Search">
+                    <i class="form-control-icon" data-feather="search"></i>
+                  </div>
+                </form>
+              </a>
+            </li>
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="assets/images/free-user-icon-3297-thumb.png" alt="user" class="rounded-circle" width="40">
+                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span class="text-dark">Admin</span> <i
+                    data-feather="chevron-down" class="svg-icon"></i></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                    class="svg-icon mr-2 ml-1"></i>
+                  My Profile</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Inbox</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Account Setting</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                    class="svg-icon mr-2 ml-1"></i>
+                  Logout</a>
+                <div class="dropdown-divider"></div>
+                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
+                    Profile</a></div>
+              </div>
+            </li> -->
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- End Topbar header -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+      <!-- Sidebar scroll-->
+      <div class="scroll-sidebar" data-sidebarbg="skin6">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html" aria-expanded="false"><i
+                  data-feather="home" class="feather-icon"></i><span class="hide-menu">
+                  <font color="#222"><strong>Dashboard</strong></font>
+                </span></a></li>
+            <li class="list-divider"></li>
+
+            <li class="list-divider"></li>
+            <li class="nav-small-cap"><span class="hide-menu">Programs</span></li>
+            <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                aria-expanded="false"><i data-feather="refresh-cw" class="feather-icon"
+                  style="color: blue; text-shadow: 0 0 10px rgba(0, 0, 255, 0.8);"></i><span class="hide-menu">
+                  <font color="#222"><strong>Ongoing Programs</strong></font>
+                </span></a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>MCF</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="aguka.html" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>AGUKA</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="I-acc.html" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>I-ACC</strong></font>
+
+                    </span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                aria-expanded="false"><i data-feather="check-circle" class="feather-icon"
+                  style="color: green; text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);"></i><span class="hide-menu">
+                  <font color="#222"><strong>Completed Programs</strong></font>
+                </span></a>
+              <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>MCF</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>AGUKA</strong></font>
+                    </span></a>
+                </li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                      <font color="#222"><strong>I-ACC</strong></font>
+                    </span></a>
+                </li>
+            </li>
+
+          </ul>
+          </li>
+          <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><i
+                data-feather="file-text" class="feather-icon"
+                style="stroke: black; stroke-width: 2; fill: white; filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));"></i><span
+                class="hide-menu">
+                <font color="#222"><strong>Forms</strong></font>
+              </span></a>
+            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+              <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                    <font color="#222"><strong>MCF</strong></font>
+                  </span></a>
+              </li>
+              <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                    <font color="#222"><strong>AGUKA</strong></font>
+                  </span></a>
+              </li>
+              <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu">
+                    <font color="#222"><strong>I-ACC</strong></font>
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+      <!-- ============================================================== -->
+
+
+      <!-- CONTAINER ONE (PROGRESS GRAPHS) -->
+      <style>
+        .progress-container {
+          margin: 24px 24px 24px 20px;
+          padding: 25px;
+          background: white;
+          border-radius: 15px;
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+          transition: all 0.3s ease;
+        }
+
+        .progress-container:hover {
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 25px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid #f0f0f0;
+        }
+
+        .title {
+          font-size: 1.8rem;
+          color: #1a2b47;
+          font-weight: 600;
+          letter-spacing: -0.5px;
+        }
+
+        .dropdown-btn {
+          padding: 10px 18px;
+          background: #4e73df;
+          color: rgb(255, 255, 255);
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.3s;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+        }
+
+        .dropdown-btn:hover {
+          background: #2e59d9;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 15px rgba(78, 115, 223, 0.4);
+        }
+
+        .dropdown-btn:active {
+          transform: translateY(1px);
+        }
+
+        .graphs-container {
+          display: none;
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+          gap: 25px;
+          padding: 20px 0;
+          transition: all 0.5s ease;
+        }
+
+        .graph-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 15px;
+          border-radius: 12px;
+          background: #f8f9fc;
+          transition: all 0.3s;
+          min-height: 140px;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .graph-item:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          background: white;
+          border-color: rgba(0, 0, 0, 0);
+        }
+
+        .graph-item::after {
+          content: attr(data-title);
+          display: block;
+          text-align: center;
+          margin-top: 15px;
+          font-size: 0.85rem;
+          font-weight: 500;
+          color: #555;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        /* Progress circle styles */
+        .progress-circle {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: conic-gradient(#4e73df var(--progress), #e0e0e0 0deg);
+          position: relative;
+          filter: drop-shadow(0 4px 10px rgba(78, 115, 223, 0.2));
+          transition: all 0.3s ease;
+        }
+
+        .progress-circle::before {
+          content: '';
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background: white;
+          border-radius: 50%;
+          top: 10px;
+          left: 10px;
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .percentage {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #1a2b47;
+        }
+
+        /* Custom currency display */
+        .currency-display {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(135deg, #4e73df, #2e59d9);
+          border-radius: 50%;
+          color: white;
+          box-shadow: 0 6px 15px rgba(78, 115, 223, 0.3);
+        }
+
+        .currency-value {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1;
+        }
+
+        .currency-code {
+          font-size: 0.9rem;
+          opacity: 0.8;
+          margin-top: 5px;
+        }
+
+        /* No data indicator */
+        .no-data {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f0f0f0;
+          border-radius: 50%;
+          color: #888;
+          font-weight: 500;
+          font-size: 0.9rem;
+          border: 2px dashed #ccc;
+        }
+
+        /* Custom colors for different value ranges */
+        .progress-high {
+          background: conic-gradient(#1cc88a var(--progress), #e0e0e0 0deg);
+        }
+
+        .progress-medium {
+          background: conic-gradient(#f6c23e var(--progress), #e0e0e0 0deg);
+        }
+
+        .progress-low {
+          background: conic-gradient(#e74a3b var(--progress), #e0e0e0 0deg);
+        }
+
+        .popup-card {
+          position: absolute;
+          top: -100px;
+          left: 50%;
+          transform: translateX(-50%) scale(0);
+          background: white;
+          padding: 15px;
+          border-radius: 10px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+          z-index: 100;
+          transition: all 0.3s;
+          pointer-events: none;
+          width: 180px;
+          opacity: 0;
+        }
+
+        .graph-item:hover .popup-card {
+          transform: translateX(-50%) scale(1);
+          opacity: 1;
+        }
+
+        .popup-card strong {
+          display: block;
+          color: #1a2b47;
+          margin-bottom: 8px;
+          font-size: 0.95rem;
+        }
+
+        .popup-card p {
+          margin: 5px 0;
+          color: #555;
+          font-size: 0.85rem;
+        }
+
+        .show {
+          display: grid !important;
+          animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+      </head>
+      <div class="progress-container">
+        <div class="header">
+          <h2 style="margin: 0; color: #5a5c69;" class="title"><strong>MCF Program Progress Overview</strong></h2>
+          <button class="dropdown-btn" onclick="toggleGraphs()">
+            <i class="fa fa-chevron-down"></i>
+          </button>
+
+        </div>
+        <div class="graphs-container" id="graphsContainer">
+          <!-- Graphs will be dynamically added here -->
+        </div>
+      </div>
+
+      <script>
+        function toggleGraphs() {
+          const container = document.getElementById('graphsContainer');
+          container.classList.toggle('show');
+          const btn = document.querySelector('.dropdown-btn');
+          const icon = btn.querySelector('i');
+          const text = btn.querySelector('span');
+
+          if (container.classList.contains('show')) {
+            text.textContent = 'Hide Graphs';
+            icon.className = 'fa fa-chevron-up';
+          } else {
+            text.textContent = 'Show Graphs';
+            icon.className = 'fa fa-chevron-down';
+          }
+        }
+
+        // Clear existing content
+        const graphsContainer = document.getElementById('graphsContainer');
+        graphsContainer.innerHTML = '';
+
+        // New project names and percentages/values with types
+        const projectData = [
+          { name: "Youth Training Participation", value: 0.46, type: "percent" },
+          { name: "Training Completion Rate", value: 0.25, type: "percent" },
+          { name: "Training Quality Rating", value: 20, type: "percent" },
+          { name: "Business Services Access", value: 3.38, type: "percent" },
+          { name: "Non-Financial Services Offered", value: 1.1, type: "percent" },
+          { name: "Financial Services Access", value: 0, type: "percent" },
+          { name: "Financial Products Offered", value: 0, type: "percent" },
+          { name: "Financial Services Value", value: 6, type: "currency", currency: "RWF" },
+          { name: "Support Quality Feedback", value: 0, type: "nodata" },
+          { name: "Skills Improvement", value: 0, type: "percent" },
+          { name: "Enterprise Development", value: 0, type: "percent" },
+          { name: "Youth Employment Rate", value: 0, type: "percent" },
+          { name: "Youth Self-Employment", value: 2, type: "percent" },
+          { name: "Dignified Work Placement", value: 0, type: "percent" },
+          { name: "Revenue Growth", value: 0, type: "percent" },
+          { name: "Market Expansion", value: 0, type: "percent" },
+          { name: "Non-Youth Employment", value: 0, type: "percent" },
+          { name: "Enterprise Survival Rate", value: 0, type: "percent" }
+        ];
+
+        projectData.forEach((project, index) => {
+          const graphItem = document.createElement('div');
+          graphItem.className = 'graph-item';
+          graphItem.setAttribute('data-title', project.name);
+
+          let displayValue = '';
+          let visualValue = 0;
+          let progressClass = '';
+
+          // Determine display format and visual representation based on data type
+          switch (project.type) {
+            case "currency":
+              displayValue = `${project.value} ${project.currency}`;
+              visualValue = 0; // Not used for currency
+              break;
+            case "nodata":
+              displayValue = "No data";
+              visualValue = 0;
+              break;
+            case "percent":
+            default:
+              displayValue = `${project.value}%`;
+              visualValue = project.value;
+
+              // Determine color class based on value
+              if (project.value >= 15) {
+                progressClass = 'progress-high';
+              } else if (project.value >= 5) {
+                progressClass = 'progress-medium';
+              } else {
+                progressClass = 'progress-low';
+              }
+              break;
+          }
+
+          // Create appropriate visualization based on the type
+          let visualElement = '';
+
+          if (project.type === "currency") {
+            visualElement = `
+      <div class="currency-display">
+        <span class="currency-value">${project.value}</span>
+        <span class="currency-code">${project.currency}</span>
+      </div>
+    `;
+          } else if (project.type === "nodata") {
+            visualElement = `
+      <div class="no-data">
+        No data
+      </div>
+    `;
+          } else {
+            visualElement = `
+      <div class="progress-circle ${progressClass}" style="--progress: ${visualValue}%">
+        <span class="percentage">${displayValue}</span>
+      </div>
+    `;
+          }
+
+          graphItem.innerHTML = `
+    ${visualElement}
+    <div class="popup-card">
+      <strong>${project.name}</strong>
+      <p>Value: ${displayValue}</p>
+      ${project.type === "percent" ? `<p>Target: 100%</p>` : ''}
+    </div>
+  `;
+
+          graphsContainer.appendChild(graphItem);
+        });      </script>
+
+
+      <!-- ============================================================== -->
+      <!-- CONTAINER TWO (INPUTS)-->
+
+      <style>
+        .embedded-container {
+          margin: 24px 24px 24px 20px;
+          padding: 25px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .title {
+          font-size: 1.5rem;
+          color: #2c3e50;
+          font-weight: 500;
+        }
+
+        .iframe-container {
+          position: relative;
+          transition: all 0.3s ease;
+          display: none;
+        }
+
+        .iframe-container.show {
+          display: block;
+          animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .iframe-container.expanded {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90vw;
+          height: 90vh;
+          z-index: 1000;
+          background: white;
+          padding: 20px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+        }
+
+        .iframe-wrapper {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .iframe-container.expanded .iframe-wrapper {
+          padding-bottom: 90%;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+        }
+
+        .action-btn {
+          padding: 8px 15px;
+          background: #4e73df;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .action-btn:hover {
+          background: #2e59d9;
+        }
+
+        .expand-btn {
+          display: none;
+          margin-left: 10px;
+        }
+
+        .overlay {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+        }
+
+        .overlay.active {
+          display: block;
+        }
+
+        .close-btn {
+          display: none;
+          position: absolute;
+          top: -40px;
+          right: 0;
+          padding: 8px 15px;
+          background: #dc3545;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .close-btn:hover {
+          background: #c82333;
+        }
+
+        .iframe-container.expanded .close-btn {
+          display: block;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+      </head>
+
+      <body>
+        <div class="embedded-container">
+          <div class="header">
+            <h2 style="margin: 0; color: #5a5c69;" class="title">MCF Input</h2>
+            <div>
+
+
+              <button class="action-btn show-btn" id="showBtn" onclick="toggleIframe()">
+                <i class="fa fa-chevron-down"></i>
+              </button>
+
+
+              <button class="action-btn expand-btn" id="expandBtn" onclick="toggleExpand()">Expand</button>
+
+            </div>
+
+
+
+
+          </div>
+          <div class="iframe-container" id="iframeContainer">
+            <button class="close-btn" onclick="toggleExpand()">Close</button>
+            <div class="iframe-wrapper">
+              <iframe
+                src="https://docs.google.com/spreadsheets/d/1wy1jKvDj-ve0X79-npI3ZNZbdh8thSlcTk6avzG8a7w/edit?usp=sharing"
+                frameborder="0" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <style>
+            .iframe-wrapper {
+              position: relative;
+              overflow: hidden;
+              height: 500px;
+            }
+
+            .iframe-wrapper iframe {
+              width: 100%;
+              /* Increase height to account for toolbar */
+              height: calc(100% + 135px);
+              /* Move content up to hide toolbar */
+              margin-top: -100px;
+              border: none;
+            }
+
+            /* Hide Google Sheets UI elements */
+            .waffle-embedded-footer,
+            [class*="docs-sheet-container"]>div:last-child {
+              display: none !important;
+            }
+
+            /* Additional selectors to hide toolbar elements */
+            .docs-sheet-container>div:first-child,
+            #docs-toolbar-wrapper,
+            .docs-sheet-header,
+            #docs-chrome {
+              display: none !important;
+            }
+
+            /* Preserve your existing close button styling */
+            .close-btn {
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              z-index: 1000;
+            }
+
+            /* Your existing overlay styles remain unchanged */
+          </style>
+
+          <div class="overlay" id="overlay"></div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <script>
+          function toggleIframe() {
+            const container = document.getElementById('iframeContainer');
+            const showBtn = document.getElementById('showBtn');
+            const expandBtn = document.getElementById('expandBtn');
+
+            container.classList.toggle('show');
+            showBtn.innerHTML = container.classList.contains('show')
+              ? 'Close'  // Keep "Close" as text
+              : '<i class="fa fa-chevron-down"></i>';  // Replace "Open" with an icon
+
+            expandBtn.style.display = container.classList.contains('show') ? 'inline-block' : 'none';
+          }
+
+          function toggleExpand() {
+            const container = document.getElementById('iframeContainer');
+            const overlay = document.getElementById('overlay');
+            const expandBtn = document.getElementById('expandBtn');
+            const showBtn = document.getElementById('showBtn');
+
+            container.classList.toggle('expanded');
+            overlay.classList.toggle('active');
+
+            if (container.classList.contains('expanded')) {
+              expandBtn.style.display = 'none';
+              showBtn.style.display = 'none';
+              document.body.style.overflow = 'hidden';
+            } else {
+              expandBtn.style.display = 'inline-block';
+              showBtn.style.display = 'inline-block';
+              document.body.style.overflow = 'auto';
+            }
+          }
+
+          // Close expanded view when clicking overlay
+          document.getElementById('overlay').addEventListener('click', function () {
+            if (document.getElementById('iframeContainer').classList.contains('expanded')) {
+              toggleExpand();
+            }
+          });
+
+          // Close expanded view when pressing ESC key
+          document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && document.getElementById('iframeContainer').classList.contains('expanded')) {
+              toggleExpand();
+            }
+          });
+        </script>
+
+
+        <!-- ============================================================== -->
+        <!-- CONTAINER THREE (INDICATOR VISUALISATION)-->
+        <style>
+          .dashboard-container {
+            margin: 24px 24px 24px 20px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+
+          .sections-wrapper {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+          }
+
+          .sections-wrapper.show {
+            max-height: 2000px;
+          }
+
+          .toggle-btn {
+            background: #4e73df;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+          }
+
+          .toggle-btn:hover {
+            background: #2e59d9;
+          }
+
+          .section-container {
+            margin-bottom: 15px;
+          }
+
+          .section-header {
+            background: #f8f9fc;
+            padding: 15px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+          }
+
+          .section-header:hover {
+            background: #eaecf4;
+          }
+
+          .section-title {
+            margin: 0;
+            font-size: 18px;
+            color: #4e73df;
+          }
+
+          .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: white;
+            border-radius: 0 0 8px 8px;
+          }
+
+          .section-content.expanded {
+            max-height: max-content;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #e3e6f0;
+          }
+
+          .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+          }
+
+          .metric-card {
+            background: #f8f9fc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+          }
+
+          .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4e73df;
+            margin: 10px 0 5px;
+          }
+
+          .metric-label {
+            color: #858796;
+            font-size: 14px;
+          }
+
+          .arrow {
+            border: solid #4e73df;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+          }
+
+          .arrow.up {
+            transform: rotate(-135deg);
+          }
+        </style>
+
+
+        <div class="dashboard-container">
+          <div class="main-header">
+            <h2 style="margin: 0; color: #5a5c69;"><strong>Indicator Visualisation</strong></h2>
+
+            <button class="toggle-btn" onclick="toggleMainSection()">
+              <i class="fa fa-chevron-down"></i>
+            </button>
+          </div>
+
+          <div class="sections-wrapper">
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>OutPut Level</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+                <div class="chart-grid">
+                  <!-- YOUTH WHO PARTICIPATED IN TRAININGS-START -->
+                  <div style="width: 100%; max-width: 700px; margin: auto;">
+                    <canvas id="trainingChart" height="300"></canvas>
+                  </div>
+
+                  <!-- Chart Script -->
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script>
+                    const ctx = document.getElementById('trainingChart').getContext('2d');
+
+                    const trainingChart = new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Participation'],
+                        datasets: [
+                          {
+                            label: 'Men',
+                            data: [167],
+                            backgroundColor: 'rgba(54, 162, 235, 0.8)'
+                          },
+                          {
+                            label: 'Women',
+                            data: [167],
+                            backgroundColor: 'rgba(255, 99, 132, 0.8)'
+                          },
+                          {
+                            label: 'Total',
+                            data: [334],
+                            backgroundColor: 'rgba(255, 206, 86, 0.8)'
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Youth who participated in Training Opportunities',
+                            font: {
+                              size: 16
+                            }
+                          },
+                          legend: {
+                            position: 'top',
+                            labels: {
+                              font: {
+                                size: 12
+                              }
+                            }
+                          }
+                        },
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            title: {
+                              display: true,
+                              text: 'Number of Youth (scaled down)',
+                              font: {
+                                size: 12
+                              }
+                            },
+                            ticks: {
+                              stepSize: 5,
+                              font: {
+                                size: 11
+                              }
+                            }
+                          },
+                          x: {
+                            ticks: {
+                              font: {
+                                size: 12
+                              }
+                            }
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                  <!-- YOUTH WHO PARTICIPATED IN TRAININGS-- END -->
+
+
+                  <!-- YOUTH WHO COMPLETED THE TRAINING -->
+                  <div class="w-full md:w-[900px] h-[600px] mx-auto mt-6">
+                    <canvas id="completionGraph"></canvas>
+                  </div>
+
+                  <!-- Chart.js Script for Completion Graph -->
+                  <script>
+                    const completionCtx = document.getElementById('completionGraph').getContext('2d');
+
+                    new Chart(completionCtx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Completed'],
+                        datasets: [
+                          {
+                            label: 'Men Completed',
+                            data: [164],
+                            backgroundColor: 'rgba(54, 162, 235, 0.8)'
+                          },
+                          {
+                            label: 'Women Completed',
+                            data: [163],
+                            backgroundColor: 'rgba(255, 99, 132, 0.8)'
+                          },
+                          {
+                            label: 'Total Completed',
+                            data: [327],
+                            backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Youth Who Completed Training',
+                            font: {
+                              size: 22,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 10,
+                              bottom: 30
+                            }
+                          },
+                          legend: {
+                            position: 'top',
+                            align: 'center',
+                            labels: {
+                              boxWidth: 20,
+                              font: {
+                                size: 16
+                              }
+                            },
+                            display: true,
+                            maxWidth: 1000,
+                            maxHeight: 50
+                          },
+                          tooltip: {
+                            titleFont: {
+                              size: 16
+                            },
+                            bodyFont: {
+                              size: 14
+                            }
+                          },
+                          legendCallback: function (chart) {
+                            // Custom legend to ensure horizontal alignment
+                            const legendItems = chart.data.datasets.map(dataset => {
+                              return `<div style="display: inline-block; margin: 0 15px;">
+                                        <span style="background-color: ${dataset.backgroundColor}; 
+                                               width: 20px; height: 20px; display: inline-block; 
+                                               margin-right: 5px;"></span>
+                                        <span>${dataset.label}</span>
+                                      </div>`;
+                            }).join('');
+                            return `<div style="text-align: center; margin-bottom: 20px;">${legendItems}</div>`;
+                          }
+                        },
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            max: 327,
+                            ticks: {
+                              font: {
+                                size: 14
+                              },
+                              stepSize: 1
+                            },
+                            title: {
+                              display: true,
+                              text: 'Number of Completions',
+                              font: {
+                                size: 16
+                              }
+                            }
+                          },
+                          x: {
+                            ticks: {
+                              font: {
+                                size: 16
+                              }
+                            }
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                  <!-- YOUTH WHO COMPLETED THE TRAINING- END -->
+
+
+                  <!-- VIEWS OF LEARNERS -->
+                  <div class="w-full md:w-[800px] h-[500px] mx-auto mt-8">
+                    <canvas id="trainingQualityChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctx3 = document.getElementById('trainingQualityChart').getContext('2d');
+                    new Chart(ctx3, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Quality', 'Usefulness', 'Relevance'],
+                        datasets: [{
+                          data: [100, 100, 100],
+                          backgroundColor: ['rgba(59, 130, 246, 0.8)', 'rgba(16, 185, 129, 0.8)', 'rgba(245, 158, 11, 0.8)'],
+                          borderColor: ['rgba(59, 130, 246, 1)', 'rgba(16, 185, 129, 1)', 'rgba(245, 158, 11, 1)'],
+                          borderWidth: 1,
+                          borderRadius: 8,
+                          barThickness: 80
+                        }]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                              color: 'rgba(200, 200, 200, 0.3)'
+                            },
+                            ticks: {
+                              callback: (value) => value + '%',
+                              font: {
+                                size: 14
+                              }
+                            },
+                            title: {
+                              display: true,
+                              text: 'Percentage',
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              },
+                              padding: {
+                                bottom: 10
+                              }
+                            }
+                          },
+                          x: {
+                            grid: {
+                              display: false
+                            },
+                            ticks: {
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              }
+                            }
+                          }
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Learners\' Views on Training Quality',
+                            font: {
+                              size: 20,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 10,
+                              bottom: 30
+                            }
+                          },
+
+                        }
+                      }
+                    });
+                  </script>
+                  <!-- VIEWS OF LEARNERS-END -->
+
+                  <!--ENTERPRISES ACCESSING BDS-->
+                  <div class="w-full md:w-[800px] h-[500px] mx-auto mt-8">
+                    <canvas id="bdsAccessChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctx4 = document.getElementById('bdsAccessChart').getContext('2d');
+                    new Chart(ctx4, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Agriculture', 'Retail', 'Tech', 'Services'],
+                        datasets: [
+                          {
+                            label: 'Youth (Urban, Low Income)',
+                            data: [3, 2, 1, 2],
+                            backgroundColor: 'rgba(59, 130, 246, 0.8)', // Blue
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 1
+                          },
+                          {
+                            label: 'Women (Rural, Mid Income)',
+                            data: [2, 3, 0, 1],
+                            backgroundColor: 'rgba(236, 72, 153, 0.8)', // Pink
+                            borderColor: 'rgba(236, 72, 153, 1)',
+                            borderWidth: 1
+                          },
+                          {
+                            label: 'PWDs (Urban, Low Income)',
+                            data: [1, 2, 2, 1],
+                            backgroundColor: 'rgba(16, 185, 129, 0.8)', // Green
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            borderWidth: 1
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                          x: {
+                            stacked: true,
+                            grid: {
+                              display: false
+                            },
+                            title: {
+                              display: true,
+                              text: 'Sectors',
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              },
+                              padding: {
+                                top: 10
+                              }
+                            },
+                            ticks: {
+                              font: {
+                                size: 14
+                              }
+                            }
+                          },
+                          y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            grid: {
+                              color: 'rgba(200, 200, 200, 0.3)'
+                            },
+                            title: {
+                              display: true,
+                              text: 'Number of Enterprises/Groups',
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              }
+                            },
+                            ticks: {
+                              font: {
+                                size: 14
+                              },
+                              stepSize: 1
+                            }
+                          }
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Enterprises Accessing BDS (Total: 22)',
+                            font: {
+                              size: 20,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 10,
+                              bottom: 30
+                            }
+                          },
+                          tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            titleFont: {
+                              size: 16
+                            },
+                            bodyFont: {
+                              size: 14
+                            }
+                          },
+                          legend: {
+                            position: 'top',
+                            align: 'center',
+                            labels: {
+                              boxWidth: 15,
+                              font: {
+                                size: 14
+                              },
+                              usePointStyle: false
+                            },
+                            maxHeight: 50,
+                            maxWidth: 800
+                          }
+                        },
+                        layout: {
+                          padding: {
+                            top: 40
+                          }
+                        },
+                        plugins: [{
+                          beforeInit: function (chart) {
+                            // Force single line legend
+                            chart.legend.afterFit = function () {
+                              this.height = this.height + 20;
+                              // This forces items to display in a single line
+                              this._maxHeight = 40;
+                            };
+                          }
+                        }]
+                      }
+                    });
+
+                    // Additional workaround to ensure legends are in a straight line
+                    document.addEventListener('DOMContentLoaded', function () {
+                      setTimeout(function () {
+                        const legendItems = document.querySelectorAll('#bdsAccessChart + .chartjs-legend-list-item');
+                        legendItems.forEach(item => {
+                          item.style.display = 'inline-block';
+                          item.style.margin = '0 15px';
+                        });
+                      }, 100);
+                    });
+                  </script>
+                  <!--ENTERPRISES ACCESSING BDS-END (PER GRANTS AND LOANS)-->
+
+
+                  <div class="w-full md:w-[800px] h-[500px] mx-auto mt-8">
+                    <canvas id="nonFinancialServicesChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctx5 = document.getElementById('nonFinancialServicesChart').getContext('2d');
+                    const chart = new Chart(ctx5, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Ind. Coaching', 'Cat. Fund', 'Tech. Coaching', 'BDS Sem.', 'Sector Sem.', 'SME Sem.', 'Networking'],
+                        datasets: [
+                          {
+                            label: 'Men',
+                            data: [10, 15, 8, 7, 9, 12, 6],
+                            backgroundColor: 'rgba(59, 130, 246, 0.8)', // Blue
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 1,
+                            barPercentage: 0.9,
+                            categoryPercentage: 0.9
+                          },
+                          {
+                            label: 'Women',
+                            data: [8, 11, 7, 5, 7, 10, 5],
+                            backgroundColor: 'rgba(236, 72, 153, 0.8)', // Pink
+                            borderColor: 'rgba(236, 72, 153, 1)',
+                            borderWidth: 1,
+                            barPercentage: 0.9,
+                            categoryPercentage: 0.9
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                          x: {
+                            grid: {
+                              display: false
+                            },
+                            ticks: {
+                              font: {
+                                size: 12
+                              },
+                              maxRotation: 45,
+                              minRotation: 45,
+                              padding: 0
+                            },
+                            afterFit: function (scale) {
+                              scale.height = 60; // Fixed height for x-axis to make more room for the chart
+                            }
+                          },
+                          y: {
+                            beginAtZero: true,
+                            grid: {
+                              color: 'rgba(200, 200, 200, 0.3)'
+                            },
+                            ticks: {
+                              precision: 0,
+                              padding: 5
+                            }
+                          }
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Non-Financial Products/Services Offered',
+                            font: {
+                              size: 16,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 5,
+                              bottom: 10
+                            }
+                          },
+                          tooltip: {
+                            callbacks: {
+                              title: function (tooltipItems) {
+                                const fullLabels = {
+                                  'Ind. Coaching': 'Individual Coaching',
+                                  'Cat. Fund': 'Catalytic Fund Coaching',
+                                  'Tech. Coaching': 'Technical Coaching',
+                                  'BDS Sem.': 'BDS Seminars',
+                                  'Sector Sem.': 'Sector Specific Seminars',
+                                  'SME Sem.': 'SME Staff Seminars',
+                                  'Networking': 'Networking'
+                                };
+                                return fullLabels[tooltipItems[0].label] || tooltipItems[0].label;
+                              }
+                            }
+                          },
+                          legend: {
+                            position: 'top',
+                            align: 'start',
+                            labels: {
+                              boxWidth: 12,
+                              padding: 8
+                            },
+                            maxHeight: 25
+                          }
+                        },
+                        layout: {
+                          padding: {
+                            right: 5,
+                            left: 5,
+                            top: 10,
+                            bottom: 5
+                          }
+                        }
+                      },
+                      plugins: [{
+                        id: 'increasePadding',
+                        beforeLayout: function (chart) {
+                          // Reduce margins around the chart
+                          chart.options.layout.padding = {
+                            left: 0,
+                            right: 0,
+                            top: 5,
+                            bottom: 30
+                          };
+                        }
+                      }]
+                    });
+                  </script>
+
+                  <div class="w-full md:w-[1000px] h-[700px] mx-auto mt-8">
+                    <canvas id="financialServicesChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctx6 = document.getElementById('financialServicesChart').getContext('2d');
+                    new Chart(ctx6, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Loan', 'Equity', 'Grant', 'Insurance', 'Electronic funds', 'Group finance'],
+                        datasets: [
+                          {
+                            label: 'Youth (Urban, Low Income)',
+                            data: [1, 0, 0, 0, 0, 0],
+                            backgroundColor: 'rgba(59, 130, 246, 0.8)', // Blue
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 1,
+                            barPercentage: 0.9,
+                            categoryPercentage: 0.9
+                          },
+                          {
+                            label: 'Women (Rural, Mid Income)',
+                            data: [0, 0, 1, 0, 0, 0],
+                            backgroundColor: 'rgba(236, 72, 153, 0.8)', // Pink
+                            borderColor: 'rgba(236, 72, 153, 1)',
+                            borderWidth: 1,
+                            barPercentage: 0.9,
+                            categoryPercentage: 0.9
+                          },
+                          {
+                            label: 'PWDs (Urban, Low Income)',
+                            data: [0, 0, 1, 0, 0, 0],
+                            backgroundColor: 'rgba(16, 185, 129, 0.8)', // Green
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            borderWidth: 1,
+                            barPercentage: 0.9,
+                            categoryPercentage: 0.9
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                          x: {
+                            stacked: true,
+                            grid: {
+                              display: false
+                            },
+                            ticks: {
+                              font: {
+                                size: 13
+                              },
+                              maxRotation: 45,
+                              minRotation: 45,
+                              padding: 0
+                            },
+                            afterFit: function (scale) {
+                              scale.height = 60; // Fixed height for x-axis to make more room for the chart
+                            }
+                          },
+                          y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            max: 3,
+                            grid: {
+                              color: 'rgba(200, 200, 200, 0.3)'
+                            },
+                            ticks: {
+                              precision: 0,
+                              stepSize: 1,
+                              padding: 5
+                            }
+                          }
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Enterprises/Groups Accessing Financial Products/Services (Total: 3)',
+                            font: {
+                              size: 18,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 5,
+                              bottom: 10
+                            }
+                          },
+                          tooltip: {
+                            mode: 'index',
+                            intersect: false
+                          },
+                          legend: {
+                            position: 'top',
+                            align: 'start',
+                            labels: {
+                              boxWidth: 12,
+                              padding: 8,
+                              font: {
+                                size: 12
+                              }
+                            },
+                            maxHeight: 30
+                          }
+                        },
+                        layout: {
+                          padding: {
+                            right: 5,
+                            left: 5,
+                            top: 10,
+                            bottom: 5
+                          }
+                        }
+                      },
+                      plugins: [{
+                        id: 'forceSingleLineLegend',
+                        beforeInit: function (chart) {
+                          const originalFit = chart.legend.fit;
+                          chart.legend.fit = function () {
+                            originalFit.bind(chart.legend)();
+                            this.height = 30;
+                          };
+                        }
+                      }]
+                    });
+                  </script>
+                  <!-- ENTERPRISES ACCESSING FINANCIAL PRODUCTS/SERVICES-END-->
+
+                  <!--NUMBER OF FINANCIAL PRODUCTS/SERVICES OFFERED-->
+                  <div class="w-full md:w-[800px] h-[500px] mx-auto mt-8">
+                    <canvas id="financialProductsChart"></canvas>
+                  </div>
+
+                  <script>
+                    const ctx7 = document.getElementById('financialProductsChart').getContext('2d');
+                    new Chart(ctx7, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Product 1', 'Product 2'],
+                        datasets: [
+                          {
+                            label: 'Type of Support',
+                            data: [1, 1],
+                            backgroundColor: 'rgba(59, 130, 246, 0.8)', // Blue
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            borderWidth: 1
+                          },
+                          {
+                            label: 'Sector',
+                            data: [1, 1],
+                            backgroundColor: 'rgba(236, 72, 153, 0.8)', // Pink
+                            borderColor: 'rgba(236, 72, 153, 1)',
+                            borderWidth: 1
+                          },
+                          {
+                            label: 'Location',
+                            data: [1, 1],
+                            backgroundColor: 'rgba(16, 185, 129, 0.8)', // Green
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            borderWidth: 1
+                          },
+                          {
+                            label: 'Institution Leadership',
+                            data: [1, 1],
+                            backgroundColor: 'rgba(245, 158, 11, 0.8)', // Yellow
+                            borderColor: 'rgba(245, 158, 11, 1)',
+                            borderWidth: 1
+                          }
+                        ]
+                      },
+                      options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                          x: {
+                            stacked: true,
+                            grid: {
+                              display: false
+                            },
+                            title: {
+                              display: true,
+                              text: 'Financial Products/Services',
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              },
+                              padding: {
+                                top: 10
+                              }
+                            },
+                            ticks: {
+                              font: {
+                                size: 14
+                              }
+                            }
+                          },
+                          y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            grid: {
+                              color: 'rgba(200, 200, 200, 0.3)'
+                            },
+                            title: {
+                              display: true,
+                              text: 'Number of Products/Services',
+                              font: {
+                                size: 16,
+                                weight: 'bold'
+                              }
+                            },
+                            ticks: {
+                              font: {
+                                size: 14
+                              },
+                              stepSize: 1
+                            }
+                          }
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Number of Financial Products/Services Offered (Total: 2)',
+                            font: {
+                              size: 20,
+                              weight: 'bold'
+                            },
+                            padding: {
+                              top: 10,
+                              bottom: 30
+                            }
+                          },
+                          tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            titleFont: {
+                              size: 16
+                            },
+                            bodyFont: {
+                              size: 14
+                            }
+                          },
+                          legend: {
+                            position: 'top',
+                            align: 'center',
+                            labels: {
+                              boxWidth: 12,
+                              font: {
+                                size: 12
+                              }
+                            },
+                            maxHeight: 40
+                          }
+                        },
+                        layout: {
+                          padding: {
+                            top: 30,
+                            right: 10,
+                            bottom: 10,
+                            left: 10
+                          }
+                        }
+                      },
+                      plugins: [{
+                        id: 'forceSingleLineLegend',
+                        beforeInit: function (chart) {
+                          const originalFit = chart.legend.fit;
+                          chart.legend.fit = function () {
+                            originalFit.bind(chart.legend)();
+                            this.height = 30;
+                          };
+                        }
+                      }]
+                    });
+                  </script>
+                  <!--NUMBER OF FINANCIAL PRODUCTS/SERVICES OFFERED-END-->
+
+
+
+                  <!--TOTAL VALUE OF FINANCIAL PRODUCTS (TRUE SCATTER GRAPH)-->
+                  <div class="chart-container" style="width: 100%; max-width: 700px; margin: 20px auto; height: 330px;">
+                    <h2 style="text-align: center; font-size: 16px; margin-bottom: 15px; color: #333;">Total Value of
+                      Financial Products/Services Received</h2>
+                    <canvas id="financialValueChart"></canvas>
+                  </div>
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const ctx8 = document.getElementById('financialValueChart').getContext('2d');
+
+                      // Convert quarters to numeric values for X axis
+                      const financialData = [
+                        { x: 0, y: 0, quarter: '2023 Q1' },
+                        { x: 1, y: 2.5, quarter: '2023 Q2' },
+                        { x: 2, y: 4.3, quarter: '2023 Q3' },
+                        { x: 3, y: 6.1, quarter: '2023 Q4' },
+                        { x: 4, y: 8.5, quarter: '2024 Q1' },
+                        { x: 5, y: 10.2, quarter: '2024 Q2' },
+                        { x: 6, y: 12.4, quarter: '2024 Q3' },
+                        { x: 7, y: 15.7, quarter: '2024 Q4' },
+                        { x: 8, y: 18.3, quarter: '2025 Q1' },
+                        { x: 9, y: 20.9, quarter: '2025 Q2' },
+                        { x: 10, y: 23.1, quarter: '2025 Q3' },
+                        { x: 11, y: 26.4, quarter: '2025 Q4' }
+                      ];
+
+                      new Chart(ctx8, {
+                        type: 'scatter',
+                        data: {
+                          datasets: [{
+                            label: 'Financial Value (in RWF millions)',
+                            data: financialData,
+                            backgroundColor: 'rgba(75, 192, 192, 0.8)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            pointRadius: 8,
+                            pointHoverRadius: 10,
+                            pointStyle: 'circle'
+                          }]
+                        },
+                        options: {
+                          responsive: true,
+                          maintainAspectRatio: false,
+                          showLine: false,
+                          plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function (context) {
+                                  const point = context.raw;
+                                  return `${point.quarter}: ${point.y} million RWF`;
+                                }
+                              }
+                            },
+                            legend: {
+                              position: 'top',
+                            }
+                          },
+                          scales: {
+                            y: {
+                              beginAtZero: true,
+                              title: {
+                                display: true,
+                                text: 'Value (Million RWF)'
+                              },
+                              ticks: {
+                                stepSize: 5
+                              }
+                            },
+                            x: {
+                              type: 'linear',
+                              position: 'bottom',
+                              title: {
+                                display: true,
+                                text: 'Quarter Index'
+                              },
+                              ticks: {
+                                stepSize: 1,
+                                callback: function (value) {
+                                  const quarters = [
+                                    '2023 Q1', '2023 Q2', '2023 Q3', '2023 Q4',
+                                    '2024 Q1', '2024 Q2', '2024 Q3', '2024 Q4',
+                                    '2025 Q1', '2025 Q2', '2025 Q3', '2025 Q4'
+                                  ];
+                                  return quarters[value] || '';
+                                }
+                              }
+                            }
+                          }
+                        }
+                      });
+                    });
+                  </script>
+                  <!--TOTAL VALUE OF FINANCIAL PRODUCTS-END-->
+
+
+                  <!--QUALITY, USEFULNESS,ETC (same measurements with the X Y scatter graph and also chaneg the heading for better insight)-->
+                  <div class="w-full md:w-[700px] h-[400px] mt-8 mx-auto">
+                    <canvas id="enterpriseViewsChart"></canvas>
+                  </div>
+
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const ctx9 = document.getElementById('enterpriseViewsChart').getContext('2d');
+
+                      new Chart(ctx9, {
+                        type: 'radar',
+                        data: {
+                          labels: ['Excellent ', 'Good', 'Relevance', 'Affordability', 'Accessibility'],
+                          datasets: [{
+                            label: 'Satisfaction (%)',
+                            data: [100, 100, 100, 100, 100],
+                            backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                            borderColor: 'rgba(16, 185, 129, 0.8)',
+                            pointBackgroundColor: 'rgba(20, 83, 45, 0.8)',
+                            borderWidth: 2,
+                            pointRadius: 4
+                          }]
+                        },
+                        options: {
+                          responsive: true,
+                          plugins: {
+                            title: {
+                              display: true,
+                              text: 'Enterprise Views on Support Quality',
+                              font: {
+                                size: 16
+                              }
+                            },
+                            legend: {
+                              position: 'top',
+                              labels: {
+                                font: {
+                                  size: 12
+                                }
+                              }
+                            },
+                            tooltip: {
+                              callbacks: {
+                                label: (context) => `${context.formattedValue}%`
+                              }
+                            }
+                          },
+                          scales: {
+                            r: {
+                              suggestedMin: 0,
+                              suggestedMax: 100,
+                              ticks: {
+                                stepSize: 20,
+                                callback: (val) => `${val}%`,
+                                font: {
+                                  size: 10
+                                }
+                              },
+                              pointLabels: {
+                                font: {
+                                  size: 12
+                                }
+                              }
+                            }
+                          }
+                        }
+                      });
+                    });
+                  </script>
+                  <!--QUALITY, USEFULNESS,ETC-END-->
+                </div>
+              </div>
+            </div>
+
+
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>Intermediate Outcome</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+                <style>
+                  .chart-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                    width: 100%;
+                  }
+
+                  .chart-container {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    height: 350px;
+                    width: 100%;
+                    position: relative;
+                  }
+
+                  .chart-title {
+                    margin-bottom: 15px;
+                    color: #4e73df;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                  }
+                </style>
+
+                <div class="chart-grid">
+
+                  <!--YOUTH WITH IMPROVED LEARNING OUTCOME (measure according to the skilled listed in the database)-->
+                  <!-- Chart.js CDN -->
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                  <!-- Bar Chart Container -->
+                  <div style="width: 100%; max-width: 600px; height: 400px; margin: 2rem auto;">
+                    <h2
+                      style="font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 1rem; color: #333;">
+                      Youth with Improved Learning Outcomes</h2>
+                    <canvas id="learningOutcomeChart"></canvas>
+                  </div>
+
+                  <script>
+                    // Using a function to ensure DOM is loaded
+                    const learningOutcomeChartInit = function () {
+                      const ctx7 = document.getElementById('learningOutcomeChart');
+                      if (ctx7) {
+                        const ctx7Context = ctx7.getContext('2d');
+
+                        new Chart(ctx7Context, {
+                          type: 'bar',
+                          data: {
+                            labels: ['Youth in Program'],
+                            datasets: [
+                              {
+                                label: 'Achieved (%)',
+                                data: [0],
+                                backgroundColor: '#FF5722', // More vibrant orange
+                                borderColor: '#E64A19',
+                                borderWidth: 1
+                              },
+                              {
+                                label: 'Target (%)',
+                                data: [80],
+                                backgroundColor: '#9E9E9E', // Darker gray for better contrast
+                                borderColor: '#757575',
+                                borderWidth: 1
+                              }
+                            ]
+                          },
+                          options: {
+                            indexAxis: 'y',
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            scales: {
+                              x: {
+                                min: 0,
+                                max: 100,
+                                title: {
+                                  display: true,
+                                  text: 'Percentage (%)',
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#666'
+                                },
+                                ticks: {
+                                  font: {
+                                    size: 11
+                                  },
+                                  color: '#666'
+                                }
+                              },
+                              y: {
+                                ticks: {
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#666'
+                                }
+                              }
+                            },
+                            plugins: {
+                              tooltip: {
+                                callbacks: {
+                                  label: (context) => `${context.parsed.x}%`
+                                }
+                              },
+                              legend: {
+                                position: 'bottom',
+                                labels: {
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#555',
+                                  padding: 10
+                                }
+                              }
+                            }
+                          }
+                        });
+                      }
+                    };
+
+                    // Execute immediately if DOM is already loaded
+                    if (document.readyState === 'loading') {
+                      document.addEventListener('DOMContentLoaded', learningOutcomeChartInit);
+                    } else {
+                      learningOutcomeChartInit();
+                    }
+                  </script>
+                  <!--YOUTH WITH IMPROVED LEARNING OUTCOME-END-->
+
+
+                  <!--ENTREPRISE CAP DEV (measure as per types mentioned in the DB)-->
+                  <!-- Enterprise Capacity Development Chart Container -->
+                  <div style="width: 100%; max-width: 700px; height: 400px; margin: 2rem auto;">
+                    <h2
+                      style="font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 1rem; color: #333;">
+                      Enterprise Capacity Development (Cumulative)</h2>
+                    <canvas id="enterpriseCapacityChart"></canvas>
+                  </div>
+
+                  <script>
+                    // Using a function to ensure DOM is loaded
+                    const enterpriseCapacityChartInit = function () {
+                      const ctx6 = document.getElementById('enterpriseCapacityChart');
+                      if (ctx6) {
+                        const ctx6Context = ctx6.getContext('2d');
+
+                        const years = ['2023', '2024', '2025'];
+
+                        // Cumulative values for enterprise capacity development
+                        const enterprises = [50, 200, 650]; // The cumulative number of enterprises showing improvement
+
+                        new Chart(ctx6Context, {
+                          type: 'line',
+                          data: {
+                            labels: years,
+                            datasets: [{
+                              label: 'Enterprises with Improved Capacities (Cumulative)',
+                              data: enterprises,
+                              borderColor: '#2E7D32', // Deeper green for better visibility
+                              backgroundColor: 'rgba(46, 125, 50, 0.15)', // Slightly more opaque
+                              borderWidth: 3,
+                              fill: true,
+                              tension: 0.3,
+                              pointBackgroundColor: '#388E3C',
+                              pointRadius: 6,
+                              pointHoverRadius: 8
+                            }]
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: true,
+                            plugins: {
+                              tooltip: {
+                                callbacks: {
+                                  label: (context) => `${context.parsed.y} Enterprises`
+                                },
+                                padding: 10,
+                                titleFont: {
+                                  size: 13
+                                },
+                                bodyFont: {
+                                  size: 12
+                                }
+                              },
+                              legend: {
+                                position: 'top',
+                                labels: {
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#555',
+                                  padding: 10
+                                }
+                              }
+                            },
+                            scales: {
+                              y: {
+                                title: {
+                                  display: true,
+                                  text: 'Number of Enterprises',
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#666'
+                                },
+                                beginAtZero: true,
+                                max: 700, // Ensure we have a max value to see the full range
+                                ticks: {
+                                  font: {
+                                    size: 11
+                                  },
+                                  color: '#666',
+                                  stepSize: 100
+                                }
+                              },
+                              x: {
+                                title: {
+                                  display: true,
+                                  text: 'Year',
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#666'
+                                },
+                                ticks: {
+                                  font: {
+                                    size: 12
+                                  },
+                                  color: '#666'
+                                }
+                              }
+                            }
+                          }
+                        });
+                      }
+                    };
+
+                    // Execute immediately if DOM is already loaded
+                    if (document.readyState === 'loading') {
+                      document.addEventListener('DOMContentLoaded', enterpriseCapacityChartInit);
+                    } else {
+                      enterpriseCapacityChartInit();
+                    }
+                  </script>
+                  <!--ENTREPRISE CAP DEV-END-->
+
+                </div>
+              </div>
+            </div>
+            <!-- OUTCOME LEVEL GRAPHS -->
+
+            <div class="section-container">
+              <div class="section-header" onclick="toggleSection(this)">
+                <h3 class="section-title"><strong>Outcome Level</strong></h3>
+                <span class="arrow"></span>
+              </div>
+              <div class="section-content">
+                <style>
+                  .charts-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 15px;
+                  }
+
+                  .chart-box {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.2s;
+                    height: 350px;
+                    position: relative;
+                  }
+
+                  .chart-box:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                  }
+
+                  .chart-title {
+                    font-size: 13px;
+                    color: #333;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    text-align: center;
+                  }
+
+                  canvas {
+                    max-height: 100%;
+                    max-width: 100%;
+                  }
+                </style>
+
+                <div class="charts-grid">
+                  <!-- NUMBER OF EMPLOYED YOUTH (Make it a bar graph with dessagreatios on men, women, dissabilities, and total... all the others that follo below should follow the same pattern ) -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Employed Youth (Wage Employment)</h2>
+                    <canvas id="employedYouthChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF SELF EMPLOYED YOUTH -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Self-Employed Youth</h2>
+                    <canvas id="selfEmployedYouthChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF YOUTH IN DIGNIFIED JOBS -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Youth in Dignified & Fulfilling Work</h2>
+                    <canvas id="dignifiedWorkChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF SUPPORTED ENTERPRISES REPORTING INCREASE -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Supported Enterprises Reporting Increases in Revenues</h2>
+                    <canvas id="revenueIncreaseChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF SUPPORTED ENTERPRISES REPORTING A CHANGE IN OFFERINGS -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Enterprises Reporting a Change in Offering/Markets</h2>
+                    <canvas id="offeringChangeChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF NON-YOUTH EMPLOYED OR SELF EMPLOYED -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Non-Youth Employed or Self-Employed</h2>
+                    <canvas id="nonYouthEmploymentChart"></canvas>
+                  </div>
+
+                  <!-- NUMBER OF OPERATIONAL ENTERPRISES -->
+                  <div class="chart-box">
+                    <h2 class="chart-title">Number of Operational Enterprises (6 & 24 Months)</h2>
+                    <canvas id="operationalEnterprisesChart"></canvas>
+                  </div>
+                </div>
+
+                <script>
+                  // Common chart configuration
+                  Chart.defaults.font.size = 11;
+                  Chart.defaults.color = '#555';
+
+                  // Shared data for all charts
+                  const quarters = [
+                    '2023 Q1', '2023 Q2', '2023 Q3', '2023 Q4',
+                    '2024 Q1', '2024 Q2', '2024 Q3', '2024 Q4',
+                    '2025 Q1', '2025 Q2', '2025 Q3', '2025 Q4'
+                  ];
+
+                  // Common options for all line charts
+                  const lineChartOptions = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                      legend: {
+                        position: 'top',
+                        labels: {
+                          boxWidth: 12,
+                          padding: 10
+                        }
+                      },
+                      tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleFont: {
+                          size: 12
+                        },
+                        bodyFont: {
+                          size: 11
+                        },
+                        padding: 10,
+                        cornerRadius: 4
+                      }
+                    },
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                        grid: {
+                          color: 'rgba(0, 0, 0, 0.05)'
+                        },
+                        ticks: {
+                          padding: 5
+                        }
+                      },
+                      x: {
+                        grid: {
+                          display: false
+                        },
+                        ticks: {
+                          padding: 5
+                        }
+                      }
+                    },
+                    elements: {
+                      line: {
+                        tension: 0.3
+                      },
+                      point: {
+                        radius: 3,
+                        hoverRadius: 5
+                      }
+                    }
+                  };
+
+                  // CHART 1: EMPLOYED YOUTH
+                  const employedYouthData = [0, 200, 450, 700, 950, 1300, 1700, 2100, 2500, 3000, 3500, 4000];
+
+                  new Chart(document.getElementById('employedYouthChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Employed Youth (Cumulative)',
+                        data: employedYouthData,
+                        borderColor: '#4361ee',
+                        backgroundColor: 'rgba(67, 97, 238, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} Youth Employed`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Youth',
+                            font: {
+                              size: 11
+                            }
+                          },
+                          max: 5000
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 2: SELF-EMPLOYED YOUTH
+                  const selfEmployedYouthData = [14, 150, 300, 450, 600, 750, 950, 1200, 1400, 1600, 1800, 2000];
+
+                  new Chart(document.getElementById('selfEmployedYouthChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Self-Employed Youth (Cumulative)',
+                        data: selfEmployedYouthData,
+                        borderColor: '#06d6a0',
+                        backgroundColor: 'rgba(6, 214, 160, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} Youth Self-Employed`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Youth',
+                            font: {
+                              size: 11
+                            }
+                          },
+                          max: 2500
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 3: DIGNIFIED WORK
+                  const dignifiedWorkValues = [0, 800, 1500, 2200, 2800, 3500, 4200, 5000, 5700, 6400, 7100, 7800];
+
+                  new Chart(document.getElementById('dignifiedWorkChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Youth in Dignified Work',
+                        data: dignifiedWorkValues,
+                        borderColor: '#7209b7',
+                        backgroundColor: 'rgba(114, 9, 183, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} youth`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Youth',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 4: REVENUE INCREASE
+                  const revenueIncreaseValues = [0, 25, 50, 75, 120, 160, 210, 270, 350, 430, 510, 520];
+
+                  new Chart(document.getElementById('revenueIncreaseChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Enterprises Reporting Revenue Increase',
+                        data: revenueIncreaseValues,
+                        borderColor: '#ff6b6b',
+                        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} enterprises`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Enterprises',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 5: OFFERING CHANGES
+                  const offeringChangeValues = [0, 20, 40, 60, 90, 120, 160, 200, 250, 300, 400, 520];
+
+                  new Chart(document.getElementById('offeringChangeChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Enterprises Reporting Change in Offering/Markets',
+                        data: offeringChangeValues,
+                        borderColor: '#ff9e00',
+                        backgroundColor: 'rgba(255, 158, 0, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} enterprises`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Enterprises',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 6: NON-YOUTH EMPLOYMENT
+                  const nonYouthEmploymentValues = [0, 2, 5, 8, 10, 12, 15, 17, 20, 22, 25, 28];
+
+                  new Chart(document.getElementById('nonYouthEmploymentChart').getContext('2d'), {
+                    type: 'line',
+                    data: {
+                      labels: quarters,
+                      datasets: [{
+                        label: 'Non-Youth Employed or Self-Employed',
+                        data: nonYouthEmploymentValues,
+                        borderColor: '#3a86ff',
+                        backgroundColor: 'rgba(58, 134, 255, 0.1)',
+                        borderWidth: 2,
+                        fill: true
+                      }]
+                    },
+                    options: {
+                      ...lineChartOptions,
+                      plugins: {
+                        ...lineChartOptions.plugins,
+                        tooltip: {
+                          ...lineChartOptions.plugins.tooltip,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} individuals`
+                          }
+                        }
+                      },
+                      scales: {
+                        ...lineChartOptions.scales,
+                        y: {
+                          ...lineChartOptions.scales.y,
+                          title: {
+                            display: true,
+                            text: 'Number of Individuals',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        },
+                        x: {
+                          ...lineChartOptions.scales.x,
+                          title: {
+                            display: true,
+                            text: 'Timeline (Quarters)',
+                            font: {
+                              size: 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  });
+
+                  // CHART 7: OPERATIONAL ENTERPRISES
+                  const months = ['6 Months', '24 Months'];
+                  const operationalEnterprises = [450, 520];
+
+                  new Chart(document.getElementById('operationalEnterprisesChart').getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                      labels: months,
+                      datasets: [{
+                        label: 'Operational Enterprises',
+                        data: operationalEnterprises,
+                        backgroundColor: ['#4cc9f0', '#4361ee'],
+                        borderColor: ['#4cc9f0', '#4361ee'],
+                        borderWidth: 1
+                      }]
+                    },
+                    options: {
+                      responsive: true,
+                      maintainAspectRatio: false,
+                      plugins: {
+                        legend: {
+                          display: false
+                        },
+                        tooltip: {
+                          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                          titleFont: {
+                            size: 12
+                          },
+                          bodyFont: {
+                            size: 11
+                          },
+                          padding: 10,
+                          cornerRadius: 4,
+                          callbacks: {
+                            label: (context) => `${context.parsed.y} enterprises`
+                          }
+                        }
+                      },
+                      scales: {
+                        y: {
+                          beginAtZero: true,
+                          grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                          },
+                          title: {
+                            display: true,
+                            text: 'Number of Enterprises',
+                            font: {
+                              size: 11
+                            }
+                          },
+                          ticks: {
+                            padding: 5
+                          }
+                        },
+                        x: {
+                          grid: {
+                            display: false
+                          },
+                          title: {
+                            display: true,
+                            text: 'Months Since Receiving Support',
+                            font: {
+                              size: 11
+                            }
+                          },
+                          ticks: {
+                            padding: 5
+                          }
+                        }
+                      }
+                    }
+                  });
+                </script>
+              </div>
+            </div>
+
+            <!-- Add this script for auto-arranging graphs -->
+            <script>
+              // Function to automatically arrange graphs when added
+              function arrangeGraphs() {
+                const chartGrids = document.querySelectorAll('.chart-grid, .charts-grid');
+
+                chartGrids.forEach(grid => {
+                  // Get all direct children that are graph containers
+                  const graphContainers = grid.querySelectorAll(':scope > div:not(p)');
+
+                  // Apply proper sizing and margins to ensure auto-arrangement
+                  graphContainers.forEach(container => {
+                    container.style.width = '100%';
+                    container.style.boxSizing = 'border-box';
+
+                    // Ensure all charts have consistent container class for styling
+                    if (!container.classList.contains('chart-container') &&
+                      !container.classList.contains('chart-box')) {
+                      container.classList.add('chart-container');
+                    }
+                  });
+                });
+              }
+
+              // Function to add a new graph to a section
+              function addGraph(sectionName, chartType = 'bar', chartTitle = 'New Graph') {
+                // Find the appropriate section
+                const section = document.querySelector(`.section-container:has(.section-title:contains('${sectionName}'))`);
+                if (!section) return;
+
+                // Find the chart grid in this section
+                const chartGrid = section.querySelector('.chart-grid') || section.querySelector('.charts-grid');
+                if (!chartGrid) return;
+
+                // Create a unique ID for the new chart
+                const chartId = 'chart-' + Date.now();
+
+                // Create container for the new chart
+                const chartContainer = document.createElement('div');
+                chartContainer.className = chartGrid.classList.contains('charts-grid') ? 'chart-box' : 'chart-container';
+
+                // Add chart title
+                const titleElement = document.createElement('div');
+                titleElement.className = 'chart-title';
+                titleElement.textContent = chartTitle;
+                chartContainer.appendChild(titleElement);
+
+                // Add canvas for the chart
+                const canvas = document.createElement('canvas');
+                canvas.id = chartId;
+                canvas.height = 300;
+                chartContainer.appendChild(canvas);
+
+                // Add the container to the grid
+                chartGrid.appendChild(chartContainer);
+
+                // Call the arrangement function to ensure proper layout
+                arrangeGraphs();
+
+                // Return the chart ID so it can be used to initialize the chart
+                return chartId;
+              }
+
+              // Initialize charts arrangement on page load
+              document.addEventListener('DOMContentLoaded', arrangeGraphs);
+
+              // Make the function available globally
+              window.addGraph = addGraph;
+              window.arrangeGraphs = arrangeGraphs;
+            </script>
+
+
+          </div>
+
+          <script>
+            function toggleMainSection() {
+              const wrapper = document.querySelector('.sections-wrapper');
+              const btn = document.querySelector('.toggle-btn');
+              const btnArrow = btn.querySelector('.arrow');
+              const btnText = btn.querySelector('span:first-child');
+
+              wrapper.classList.toggle('show');
+              btnArrow.classList.toggle('up');
+              btnText.textContent = wrapper.classList.contains('show') ? 'Hide Analytics' : 'Show Analytics';
+            }
+
+            function toggleSection(header) {
+              const content = header.nextElementSibling;
+              const arrow = header.querySelector('.arrow');
+
+              // Toggle the expanded class
+              content.classList.toggle('expanded');
+              arrow.classList.toggle('up');
+
+              // Remove expanded class from other sections
+              const allSections = document.querySelectorAll('.section-content');
+              const allArrows = document.querySelectorAll('.section-header .arrow');
+
+              allSections.forEach((section) => {
+                if (section !== content) {
+                  section.classList.remove('expanded');
+                }
+              });
+
+              allArrows.forEach((arr) => {
+                if (arr !== arrow) {
+                  arr.classList.remove('up');
+                }
+              });
+            }
+          </script>
+
+
+
+
+          <!-- End Right sidebar -->
+          <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Container fluid  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer text-center">
+          Straight from <a href="https://bpn.com">BPN M&E Office</a>.
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Wrapper -->
+  <!-- ============================================================== -->
+  <!-- End Wrapper -->
+  <div class="chat-windows "></div>
+  <!-- ============================================================== -->
+  <!-- All Jquery -->
+  <!-- ============================================================== -->
+  <script src="assets/libs/jquery/dist/jquery.min.js "></script>
+  <!-- Bootstrap tether Core JavaScript -->
+  <script src="assets/libs/popper.js/dist/umd/popper.min.js "></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js "></script>
+  <!-- apps -->
+  <script src="dist/js/app.min.js "></script>
+  <script src="dist/js/app.init-menusidebar.js"></script>
+  <script src="dist/js/app-style-switcher.js "></script>
+  <script src="dist/js/feather.min.js"></script>
+  <!-- slimscrollbar scrollbar JavaScript -->
+  <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js "></script>
+  <script src="assets/extra-libs/sparkline/sparkline.js "></script>
+  <!-- theme js -->
+  <!--Menu sidebar -->
+  <script src="dist/js/sidebarmenu.js "></script>
+  <!--Custom JavaScript -->
+  <script src="dist/js/custom.min.js "></script>
+</body>
+
+</html>
